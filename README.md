@@ -8,6 +8,8 @@ These days, I am interested in ML systems and coding agents: how to evaluate the
 
 ## Selected projects
 
+- [Non-prefix KV cache reuse](https://moriowen.github.io/projects/kv-cache-reuse/) caches each agent memory's KV once and reuses it wherever the memory lands in the prompt, which prefix caching cannot do. Served through unmodified vLLM, it cut time to first token by up to 2.28×. [Code](https://github.com/moriowen/kvreuse).
+- [Finetuning Lab](https://github.com/moriowen/finetuning-lab) fine-tunes Qwen2.5-1.5B on TruthfulQA with LoRA at nine ranks and a full fine-tune, three seeds each. Rank turned out not to matter, and a silent NaN gradient briefly made it look like it did. The [results page](https://finetuning-lab.vercel.app/) walks through it.
 - [Canary](https://moriowen.github.io/projects/canary/) predicts whether a coding agent will fail from its first few steps. On a task-controlled evaluation, it cut compute by 25% for a one-point drop in solve rate.
 - [LLM Prompting Lab](https://github.com/moriowen/llm-prompting-lab) is a set of 14,935 graded trials across seven self-hosted open-weight models. The [live explorer](https://llm-prompting-lab.vercel.app/) lets you inspect every result down to the raw response.
 - [word2vec-lab](https://github.com/moriowen/word2vec-lab) compares five word2vec models on the same corpus and downstream classifier, including a skip-gram model written from scratch in PyTorch. There is a [live explorer](https://word2vec-lab.vercel.app/) for this one too.
