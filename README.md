@@ -13,6 +13,7 @@ These days, I am interested in ML systems and coding agents: how to evaluate the
 - [Canary](https://moriowen.github.io/projects/canary/) predicts whether a coding agent will fail from its first few steps. On a task-controlled evaluation, it cut compute by 25% for a one-point drop in solve rate.
 - [LLM Prompting Lab](https://github.com/moriowen/llm-prompting-lab) is a set of 14,935 graded trials across seven self-hosted open-weight models. The [live explorer](https://llm-prompting-lab.vercel.app/) lets you inspect every result down to the raw response.
 - [word2vec-lab](https://github.com/moriowen/word2vec-lab) compares five word2vec models on the same corpus and downstream classifier, including a skip-gram model written from scratch in PyTorch. There is a [live explorer](https://word2vec-lab.vercel.app/) for this one too.
+- [AI Engineering Lab](https://github.com/moriowen/ai-engineering-lab) is 25 experiments on how production AI systems are built and scaled, from hybrid search and reranking to inference serving. I write the design for each one before any code. It has just started, so there are no results yet.
 
 ## Publications
 
